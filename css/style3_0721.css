@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+body{
+    background-image: url("../images/index/bg1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 12px;
+}
+
+img{
+    vertical-align: bottom;
+}
