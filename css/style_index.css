@@ -1,0 +1,279 @@
+
+/* banner start */
+.slide-show{
+	width: 100vw;
+	height: 100%;
+	overflow: hidden;
+	display: flex;
+	transition-duration: 2s;
+}
+.slide-show img{
+	transform: translateX(100%);
+	width: 100%;
+}
+#banner{
+	height: 300px;
+}
+#banner::before{
+	height: 45px;
+	width: 100vw;
+	content: "";
+	display: block;
+} 
+
+/* banner start */
+/* 熱賣商品 start */
+#popsale > .container > .container{
+	display: flex;
+	flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+	#popsale > .container > .container{
+		justify-content: space-evenly;
+	}
+}
+.card-item{
+	margin: 0 5px;
+}
+.card img{
+	width: 100%;
+}
+
+.card-body h3,
+.card-body p{
+	color: #B15C5C;
+}
+.card-body h3{
+	text-align: center;
+	margin: 5px auto 25px;
+	width: fit-content;
+}
+
+.card-body p{
+	margin-bottom: 13px;
+	text-align: left;
+}
+.popsale-cart{
+	width: 20px;
+	height: 20px;
+	margin: 0px 10px 15px auto;
+	background-image: url("../images/icon/icon-cart-card@1x.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+@media screen and (min-width: 1200px) {
+	.popsale-cart{
+		width: 25px;
+		height: 25px;
+	}
+}
+/* 熱賣商品 end */
+/* 公司簡介 start */
+#info > .container{
+	margin: auto 10px;
+}
+@media screen and (min-width: 768px) {
+	#info > .container{
+		margin: auto auto;
+	}
+}
+.member{
+	display: flex;
+	justify-content: space-around;
+}
+@media screen and (min-width: 1200px) {
+	.member{
+		justify-content: space-evenly;
+	}
+}
+.memberCard img{
+	width: 100%;
+}
+.infoDetail{
+	width: 80%;
+	margin: 11.7px auto 3.7px;
+	line-height: 1.3;
+}
+.infoDetail h3{
+	font-size: 0.85rem;
+}
+.infoDetail p{
+	font-size: 0.7rem;
+}
+@media screen and (min-width: 768px) {
+	.infoDetail h3{
+		font-size: 1.25rem;
+		margin-bottom: 16px;
+	}
+	.infoDetail p{
+		font-size: 1rem;
+	}
+}
+/* 聯絡我們 end */
+/* 聯絡我們 start */
+#connect .container{
+	margin: 0 auto;
+}
+.column-reverse{
+	display: flex;
+	flex-direction: column-reverse;
+	margin: 0 auto;
+	width: fit-content;
+}
+@media screen and (min-width: 768px) {
+	.column-reverse{
+		display: flex;
+		flex-direction: column-reverse;
+		/* margin: 0 auto; */
+		width: 80%;
+	}
+}
+@media screen and (min-width: 1200px) {
+	#connect .container{
+		margin: 0 ;
+		align-items: center;
+	}
+	.column-reverse{
+		flex-direction: row;
+		justify-content: center;
+	}
+}
+.connectDetial{
+	padding-left: 11px;
+	text-align: left;
+	line-height: 3;
+	border-left: 2px solid #B15C5C;
+	margin: 10px 50px;
+}
+@media screen and (min-width: 1200px) {
+	.connectDetial{
+		margin-left: 34.5px;
+	}
+}
+#connectIcon{
+	display: flex;
+	position: relative;
+}
+#connectIcon p{
+	color: #FFA401;
+}
+#connectIcon img{
+	width: 6%;
+	margin: 5px 10px;
+}
+@media screen and (min-width: 768px) {
+	.connectDetial{
+		border-left: 4px solid #B15C5C;
+	}
+	#connectIcon p{
+		font-size: 1rem;
+	}
+	#connectIcon img{
+		transform: scale(0.5);
+	}
+}
+@media screen and (min-width: 1200px) {
+	#connectIcon p{
+		font-size: 1.15rem;
+	}
+	#connectIcon img{
+		transform: scale(1);
+		margin: 0 20px;
+	}
+}
+.btnMap{
+	display: block;
+	width: 80px;
+	height: 30px;
+	background-color: #FFA401;
+	color: white;
+	text-align: center;
+	border-radius: 15px;
+	font-size: 12px;
+}
+@media screen and (min-width: 768px) {
+	.btnMap{
+		display: block;
+		width: 84px;
+		height: 35px;
+		background-color: #FFA401;
+		color: white;
+		text-align: center;
+		border-radius: 20px;
+		padding: 0px;
+		position: absolute;
+		top: 10px;
+		right: 10px;
+	}
+	.map{
+		width: 50vw;
+		height: 30vw;
+		margin-bottom: 10px;
+	}
+	.map iframe{
+		width: 100%;
+		height: 100%;
+	}
+}
+/* 聯絡我們 end */
+
+/* 著作權 start */
+.prefooter{
+	margin-top: 7px;
+	width: 100%;
+	text-align: center;
+	height: 50px;
+}
+@media screen and (min-width: 768px) {
+	.prefooter{
+		height: 90px;
+	}
+}
+/* 著作權 end */
+/* 置頂 start */
+.footer{
+	background-color: #B15C5C;
+	width: 100%;
+	color: white;
+	font-size: 1rem;
+	text-align: center;
+	position: fixed;
+	bottom: 0vw;
+}
+@media screen and (min-width: 768px) {
+	.footer{
+		font-size: 43px;
+		padding: 5px;
+	}
+}
+/* 置頂 end */
+.col-8{
+	width: 80%;
+}
+.col-xs-3{
+	width: 25%;
+}
+.col-xs-5{
+	width: 45%;
+}
+
+@media screen and (min-width: 768px) {
+	.col-sm-3{
+		width: 25%;
+	}
+	.col-sm-4{
+		width: 45%;
+	}
+	.col-sm{
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.col-lg-2{
+		width: 20%;
+	}
+	.col-lg-3{
+		width: 25%;
+	}
+}
