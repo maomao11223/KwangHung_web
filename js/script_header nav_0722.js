@@ -15,6 +15,8 @@ $(document).ready(function(){
         $sideNav.removeClass("active");
     });
 
+    
+
     //  品牌手風琴 開始
     $('.sideBrand > li > ul').hide();
     $('.searchLanguage > li > ul').hide();

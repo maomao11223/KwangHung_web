@@ -67,7 +67,7 @@ a{
     background-color: black;
     position: fixed;
     width: 100vw;
-    z-index: 99;
+    z-index: 10;
 }
 .header .container{
     display: flex;
@@ -84,15 +84,21 @@ a{
         margin-top: 10px;
         display: flex;
         text-align: center;
+        height: 20px;
     }
 }
 
 .search input{
     padding: 4.5px 4px;
     border: none;
+    
 }
 .search button{
-    padding: 4px 4px;
+    text-align: center;
+    padding-bottom: 6px;
+}
+.search button i{
+    font-size: 12px;
 }
 
 .searchLanguage{
@@ -127,12 +133,15 @@ a{
 .logo{
     width: 25px;
     height: 25px;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-left: 21.5px;
+    margin-bottom: 5px;
 }
 @media screen and (min-width: 768px) {
     .logo{
+        margin-top: 6.5px;
+        margin-left: 18px;
+        margin-bottom: 8px;
         width: 53px;
         height: 53px;
     }
@@ -140,6 +149,9 @@ a{
 
 @media screen and (min-width: 1200px) {
     .logo{
+        margin-top: 10px;
+        margin-left: 0px;
+        margin-bottom: 10px;
         width: 85px;
         height: 85px;
     }
@@ -158,30 +170,35 @@ a{
        max-width: 720px;
        width: 80%;
        margin: 0px auto;
-       justify-content: space-evenly;
+       justify-content: space-around;
        position: absolute;
-       top: 25px;
-       left: 100px;
-       align-items: center;
+       top: 30px;
+       left: 80px;
     }
     .navPc img{
-        transform: scale(0.5);
+        transform: scale(0.6);
         align-items: center;
-    }
-    
-    .navPc p{
-        display: none;
+        margin: 0 auto;
     }
     .iconhover{
         transition-duration: 1s;
     }
+    .navPc a{
+        position: relative;
+    }
     .navPc a:hover img{
         opacity: 0;
     }
-    .navPc a:hover p{
+    .navPc p{
+        display: none;
+        width: max-content;
         position: absolute;
-        display: block;
-        top: 17px;
+        top: 10px;
+        text-align: center;
+        left: -15px;
+    }
+    .navPc a:hover p{
+        display: flex;
     }
 }
 @media screen and (min-width: 1200px) {
@@ -189,26 +206,26 @@ a{
         justify-content: space-between;
         width: 90%;
         max-width: 1140px;
-        top: 40px;
-        margin-left: 10px;
+        top: 55px;
+        left: 120px;
     }
     .navPc img{
-        transform: scale(0.8);
+        transform: scale(1);
     }
-  
-
 }
 
 .nav-menu{
-    margin-top: 5px;
-    margin-right: 10px;
+    margin-top: 2px;
+    margin-right: 31px;
     color: white;
     font-size: 25px;
 }
 @media screen and (min-width: 768px) {
     .nav-menu{
         position: absolute;
+        top: 35px;
         right: 10px;
+        z-index: 5;
     }
 }
 @media screen and (min-width: 1200px) {
@@ -223,8 +240,9 @@ a{
     background-color: #B15C5C;
     padding: 30.8px 0px 0px 36.5px;
     position: absolute;
-    top: 0;
+    top: 0vh;
     width: 100%;
+    z-index: 10;
 }
 @media screen and (min-width: 768px) {
     .nav{
