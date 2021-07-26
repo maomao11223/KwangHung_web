@@ -105,6 +105,7 @@ a{
     color: white;
     display: flex;
     width: 100%;
+    z-index: 50;
 }
 .searchLanguage > li{
     margin-right: 18px;
