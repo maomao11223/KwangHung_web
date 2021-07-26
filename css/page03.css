@@ -1,0 +1,221 @@
+.flex{
+	display: flex;
+}
+/* banner start */
+#banner{
+	width: 100vw;
+	z-index: 5;
+}
+.slide-show{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	display: flex;
+}
+.slide-show img{
+	width: 100%;
+	height: 100%;
+}
+
+#banner::before{
+	content: "";
+	height: 35px;
+	display: block;
+}
+@media screen and (min-width:768px) {
+	#banner::before{
+		content: "";
+		height: 65.7px;
+		display: block;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	#banner::before{
+		content: "";
+		height: 105px;
+		display: block;
+	}
+}
+
+/* banner start */
+
+/* sidebar 上面外距調整 */
+.sidebar{
+	margin-top: 33px;
+}
+
+/* brand info start */
+.brand-info{
+	display: flex;
+	justify-content: space-evenly;
+	margin: 13px auto;
+}
+
+.brand-info > div > img{
+	width: 100%;
+}
+.brand-info > div{
+	width: 45%;
+	margin: 0px 5px;
+}
+@media screen and (min-width: 768px) {
+	.brand-info{
+		margin: 24px 50px;
+	}
+}
+@media screen and (min-width: 1200px) {
+	.brand-info{
+		margin: 32px 0px;
+	}
+}
+.brand-item > div{ 
+	width: 20px;
+}
+.brand-item > div > img{
+	width: 100%;
+}
+
+.brand-item h1{
+	font-size: 0.8rem;
+	margin-bottom: 26px;
+}
+.brand-item p{
+	font-size: 0.6rem;
+}
+@media screen and (min-width: 768px) {
+	.brand-item > div{ 
+		width: 32px;
+		margin-bottom: 27px;
+	}
+	.brand-item h1{
+		font-size: 1.25rem;
+		margin-bottom: 16px;
+	}
+	.brand-item p{
+		font-size: 0.8rem;
+		padding: 0px 15px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.brand-item > div{ 
+		width: 34px;
+		margin-bottom: 27px;
+	}
+	.brand-item h1{
+		font-size: 1.75rem;
+		margin-bottom: 35px;
+	}
+	.brand-item p{
+		font-size: 1rem;
+		padding: 0px 15px;
+	}
+}
+/* brand info end */
+
+/* 商品內容 start */
+.item{
+	display: flex;
+	font-size: 0.6rem;
+	margin: 0 5px;
+}
+.item-card{
+	background-color: #FFF5D4;
+	margin: 0 5px;
+	box-shadow:  3px 3px 6px rgba(0,0,0,0.3);
+}
+.item-card a{
+	color: #B15C5C;
+}
+.item-card a > div{
+	text-align: center;
+	width: 80%;
+	margin: 10px auto;
+}
+.card-top img{
+	width: 100%;
+}
+
+.card-body > div{
+	width: 14px;
+}
+.card-body > div > img{
+	width: 100%;
+}
+.card-body > h3{
+	margin-bottom: 13px;
+}
+.btn-more{
+	background-color: #FFC200;
+	color: white;
+	width: 40px;
+	border-radius: 10px;
+	margin: 3px auto 9px;
+}
+/* 商品內容 end */
+
+/* 著作權 start */
+.prefooter{
+	margin-top: 7px;
+	width: 100%;
+	text-align: center;
+	height: 50px;
+}
+@media screen and (min-width: 768px) {
+	.prefooter{
+		height: 90px;
+	}
+}
+/* 著作權 end */
+/* 置頂 start */
+.footer{
+	background-color: #B15C5C;
+	width: 100%;
+	color: white;
+	font-size: 1rem;
+	text-align: center;
+	position: fixed;
+	bottom: 0vw;
+}
+@media screen and (min-width: 768px) {
+	.footer{
+		font-size: 43px;
+		padding: 5px;
+	}
+}
+/* 置頂 end */
+
+.col-8{
+	width: 80%;
+}
+.col-xs-3{
+	width: 25%;
+}
+.col-xs-5{
+	width: 45%;
+}
+
+@media screen and (min-width: 768px) {
+	.col-sm-2{
+		width: 15%;
+	}
+	.col-sm-3{
+		width: 25%;
+	}
+	.col-sm-4{
+		width: 45%;
+	}
+	.col-sm{
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.col-lg-2{
+		width: 20%;
+	}
+	.col-lg-3{
+		width: 25%;
+	}
+}
