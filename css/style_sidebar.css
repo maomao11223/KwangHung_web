@@ -78,10 +78,13 @@ body{
 .sm-style{
 	width: 100%;
 }
-.content{
-	width: 67.8%;
-	margin-right: 4.2%;
+@media screen and (min-width:) {
+	.content{
+		width: 67.8%;
+		margin-right: 4.2%;
+	}
 }
+
 .brand-zh{
 	font-size: 26px;
 	/* margin-top: 5px;
