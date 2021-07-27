@@ -4,10 +4,13 @@ a:hover{
 .active{
     z-index: 1;
 }
+.sidebar{
+    margin-top: 120px;
+}
 
 /* 整個頁面占比 */
 .content{
-    margin-top: 1%;
+    margin-top: 10%;
 }
 @media screen and (max-width: 1199px){
     .content{
@@ -317,7 +320,7 @@ a:hover{
     line-height: 54px;
 }
 .bg-brand{
-    background-image: url("../images/brand_white.png");
+    background-image: url("../images/page4/brand_white.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
@@ -509,7 +512,7 @@ a:hover{
     #btnPrev{
         width: 18px;
         height: 18px;
-        background-image: url("../images/btnPrev.png");
+        background-image: url("../images/page4/btnPrev.png");
         background-size: cover;
         position: absolute;
         top: 53%;
@@ -518,7 +521,7 @@ a:hover{
     #btnNext{
         width: 18px;
         height: 18px;
-        background-image: url("../images/btnNext.png");
+        background-image: url("../images/page4/btnNext.png");
         background-size: cover;
         position: absolute;
         top: 53%;

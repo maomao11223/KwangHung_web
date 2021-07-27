@@ -23,7 +23,7 @@ $(document).ready(function(){
     function fnChange1(a) {
         select = a.data.num;
         // 取得選取的圖片編號並組成完成圖檔
-        var filename = "images/post0" + a.data.num + ".png"
+        var filename = "./images/page4/post0" + a.data.num + ".png"
         $("#select-picture img").removeClass("showStyle");
         // 顯示圖片
         $("#bigImg").attr("src", filename);
